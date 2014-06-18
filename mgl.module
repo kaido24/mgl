@@ -1,0 +1,18 @@
+<?php
+
+function mgl_form_system_site_information_settings_alter(&$form, &$form_state, $form_id) {
+  $form['site_information']['mgl_global_meta_description'] = array(
+    '#type' => 'textarea',
+    '#title' => t('Meta description'),
+    '#default_value' => variable_get('mgl_global_meta_description', ''),
+    '#description' => t('Add meta description for a site. This is good For your site SEO'),
+    '#required' => TRUE,
+  );
+  $form['site_information']['mgl_global_meta_keywords'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Meta keywords'),
+    '#default_value' => variable_get('mgl_global_meta_keywords', ''),
+    '#description' => t('Add meta keyworlds for a site. This is good For your site SEO'),
+    '#required' => TRUE,
+  );
+}

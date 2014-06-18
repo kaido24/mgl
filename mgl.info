@@ -1,0 +1,3 @@
+name = Localized global Meta tags
+core = 7.x
+dependencies[] = metatag
