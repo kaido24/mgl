@@ -5,12 +5,15 @@ function mgl_form_system_site_information_settings_alter(&$form, &$form_state, $
     '#type' => 'textarea',
     '#title' => t('Meta description'),
     '#default_value' => variable_get('mgl_global_meta_description', ''),
-    '#description' => t('Add meta description for a site. This is good For your site SEO'),
+    '#description' => t("A brief and concise summary of the page's content,
+       preferably 150 characters or less. The description meta tag may be used
+         by search engines to display a snippet about the page in search results."),
   );
   $form['site_information']['mgl_global_meta_keywords'] = array(
     '#type' => 'textfield',
     '#title' => t('Meta keywords'),
     '#default_value' => variable_get('mgl_global_meta_keywords', ''),
-    '#description' => t('Add meta keyworlds for a site. This is good For your site SEO'),
+    '#description' => t('A comma-separated list of keywords about the page.
+       This meta tag is not used by most search engines.'),
   );
 }
