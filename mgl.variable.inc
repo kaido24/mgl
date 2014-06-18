@@ -3,7 +3,7 @@
  * Implements hook_variable_info().
  */
 function mgl_variable_info($options) {
-  $variable['çç'] = array(
+  $variable['mgl_global_meta_description'] = array(
     'title' => t('Global meta description', array(), $options),
     'description' => t('Add meta description for a site. This is good For your site SEO', array(), $options),
     'type' => 'string',
